@@ -1,0 +1,18 @@
+name: 'Allure report'
+description: 'Generate Allure report for test suite'
+inputs:
+  results-dir:  # id of input
+    description: 'Allure test result data dir'
+    required: true
+    default: 'allure-results'
+  report-dir:
+    description: 'Allure report target dir'
+    required: true
+    default: 'allure-report'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.results-dir }}
+    - ${{ inputs.report-dir }}
