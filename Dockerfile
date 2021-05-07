@@ -2,7 +2,7 @@ FROM openjdk:8-jre-alpine
 LABEL maintainer="andrea.fiore@lenses.io"
 
 ARG RELEASE=2.13.2
-ARG ALLURE_REPO=https://dl.bintray.com/qameta/maven/io/qameta/allure/allure-commandline
+ARG ALLURE_REPO=https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline
 
 RUN apk update 
 RUN apk add bash 
