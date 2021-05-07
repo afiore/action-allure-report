@@ -26,6 +26,6 @@ Then, assuming you have a `allure-results` and a `allure-report` folder in your 
 docker run -v ${PWD}:/github/workspace allure-gen allure-results allure-report
 ```
 
-
+OBS.: Este repositório é uma cópia de [@afiore/action-allure-report](https://github.com/afiore/action-allure-report), porém como o mesmo está com erro na URL do Dockerfile, criei este com os ajustes necessários, porém os créditos são todos referenciados @afiore.
 
 
